@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import HelloWorldClass from './components/HelloWorldClass';
+import HelloWorldFunctional from './components/HelloWorldFunctional';
 
 function App() {
+  const name1 = 'Anna';
+  const name2 = 'Billy';
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <HelloWorldFunctional name={name1} />
+      <HelloWorldClass name={name2} />
     </div>
   );
 }
