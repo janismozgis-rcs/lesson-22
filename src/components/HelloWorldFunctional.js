@@ -3,7 +3,7 @@ function HelloWorldFunctional(props) {
         alert('Called from named fucntion handleButtonClick()');
     }
 
-    return ()
+    return (
         <div>
             <h1>Hello world!</h1>
             <h3>Hello, {props.name}</h3>
